@@ -1,0 +1,70 @@
+{
+  "name": "weixin_h5_demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "lib-flexible": "^0.3.2",
+    "node-sass": "^4.13.1",
+    "postcss-plugin-px2rem": "^0.8.1",
+    "vant": "^2.5.9",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.5",
+    "vue-skeleton-webpack-plugin": "^1.2.2",
+    "vuex": "^3.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@vue/cli-plugin-babel": "^4.2.0",
+    "@vue/cli-plugin-eslint": "^4.2.0",
+    "@vue/cli-plugin-router": "^4.2.3",
+    "@vue/cli-plugin-vuex": "^4.2.3",
+    "@vue/cli-service": "^4.2.0",
+    "axios": "^0.19.2",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-import": "^1.13.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.1.2",
+    "postcss-pxtrem": "3.0.3",
+    "sass-loader": "^8.0.2",
+    "vue-content-loader": "^0.2.3",
+    "vue-template-compiler": "^2.6.11",
+    "weixin-js-sdk": "^1.4.0-test"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-pxtrem": {
+        "viewportWidth": 375,
+        "unitPrecision": 5,
+        "minPixelValue": 1,
+        "viewportUnitWidth": "vw"
+      },
+      "postcss-plugin-px2rem": {
+        "rootValue": 37.5
+      }
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
